@@ -1,0 +1,35 @@
+{ "run_list": [
+    "recipe[git]",
+    "recipe[homebrew]",
+    "recipe[rvm::user]",
+    "recipe[gogojimmy]",
+  ],
+
+  "rvm": [
+    "user_installs": [
+      "user": "gogojimmy",
+      "rubies", ['1.9.3', '2.0.0']
+    ]
+  ]
+
+  "packages": [
+    "wget",
+    "ack",
+    "tree",
+    "mobile-shell",
+    "imagemagick",
+    "curl",
+    "mysql",
+    "postgresql",
+    "redis",
+    "apple-gcc42",
+    "autojump",
+    "macvim",
+    "openssl",
+    "readline",
+    "ssh-copy-id"
+  ],
+
+  "homedir" : "/Users/gogojimmy",
+  "user" : "gogojimmy"
+}
