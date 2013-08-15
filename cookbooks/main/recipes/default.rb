@@ -30,6 +30,11 @@ dmg_package "Vagrant" do
   action :install
 end
 
+dmg_package "SourceTree" do
+  source "http://downloads.atlassian.com/software/sourcetree/SourceTree_1.6.3.1.dmg"
+  action :install
+end
+
 node['packages'].each do |package|
   homebrew_package package
 end
